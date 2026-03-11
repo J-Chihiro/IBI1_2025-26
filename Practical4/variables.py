@@ -19,7 +19,7 @@ Y = False
 W = X or Y
 print("W =", W)
 # Truth table for W =X or Y
-#X       Y      W
+# X       Y      W
 # True   True   True
 # True   False  True
 # False  True   True
