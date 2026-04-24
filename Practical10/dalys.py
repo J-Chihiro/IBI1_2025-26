@@ -33,8 +33,18 @@ print("The maximum DALYs across the first 10 years in Afghanistan was recorded i
 # The maximum DALYs across the first 10 years in Afghanistan was recorded in 1998.
 
 #use a Boolean to show all years that DALYs were recorded in Zimbabwe
+entity_list=[]
+for i in dalys_data["Entity"]:
+    if i=="Zimbabwe":
+        entity_list.append(True)
+    else:
+        entity_list.append(False)
 zimbabwe=dalys_data.loc[dalys_data.Entity=="Zimbabwe",["Year"]]
+first_year=zimbabwe["Year"].iloc[0]
+last_year=zimbabwe["Year"].iloc[-1]
 print(zimbabwe)
+print("The first year:",first_year)
+print("The last year:",last_year)
 print("Zimbabwe data were recorded from 1990 to 2019.")
 #Zimbabwe data were recorded from 1990 to 2019.
 
