@@ -49,7 +49,7 @@ for gene_name, full_sequence in records:
 #if codon is not true!
 if codon_counts:
     print("codon counts upstream of",stop_codon)
-    for codon in codon_counts:
+    for codon in codon_counts:#print out all the codon using for loop
         print(codon,codon_counts[codon])
 
 #make a pie chart
@@ -62,7 +62,7 @@ if codon_counts:
  #open a file   
 #out_file=open('count_codons.png')is wrong. this is used in text
     plt.savefig("count_codons.png", dpi=300, bbox_inches="tight")
-    plt.close()
+    plt.close()# usins plot rather than write
     print("Pie charts saved as:count_codons.png")
 else:
     print("No matching oRFs dounded for", stop_codon)

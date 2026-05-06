@@ -20,7 +20,7 @@ plt.show()
 gene_interest= "TP53" #gene of interest that can be modified
 #test whether the gene is present in the dataset
 if gene_interest in gene_expression:
-    print("Expression value：",gene_expression[gene_interest])
+    print("Expression value:",gene_expression[gene_interest])
 else:
     print("Error: Gene not found in dataset")
 #calculate the average gene expresion level

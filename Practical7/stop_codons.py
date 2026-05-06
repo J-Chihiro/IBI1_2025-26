@@ -38,7 +38,9 @@ for gene_name, full_sequence in records:
         stop_list=sorted(set(stop_codons)) #sort the seqeunces and delete the repeat
         out_file.write(">" + gene_name.split()[0] + ";" + ",".join(stop_list) + "\n")# write the gene name and stop codons in the header, then write the full sequence
         out_file.write(full_sequence +"\n") 
-
+# change the line each 60 code
+#for i in range(0, len(sequence), 60):
+#                output_file.write(sequence[i:i+60] + '\n')
 out_file.close() # close the file
 
 #method 2:
