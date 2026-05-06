@@ -2,7 +2,7 @@ Question:
 What was the distribution of DALYs across all countries in 2019?
 
 Line number:
-62-72
+76-86
 
 Discussion:
 The histogram shows that most countries had relatively lower DALYs values in 2019, while only a small number of countries had very high DALYs values. 
