@@ -18,6 +18,10 @@ sequence="ACG"
 Total=calculate_mass(sequence)#invoke the function
 print(f"The total protein mass of {sequence}:{Total:.2f}amu")
 
+#input
+user_input = input("Please enter an amino acide seqeunce (eg: ACG): ")
+total=calculate_mass(user_input)
+print(f"seqeunce {user_input.upper()} 's total quantity: {total:.2f} amu")
 #method 2--use true or false
 #def calculate_mass(sequence):
 #    total_mass = 0
