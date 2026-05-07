@@ -9,7 +9,7 @@ class food_item(object):
 #Functions to calculate the consumption
     #def consumption(food_list):is the wrong indent, as it was regarded as the method in class
 def consumption(food_list):
-        """"
+        """
         input: a list, contains items individual has consumed over a 24hr period
         Returns the total calories,protein,carbohydrate and fat comsumption over the period
         """
@@ -36,6 +36,28 @@ def consumption(food_list):
         
 #create an instance
 apple=food_item("Apple",60,0.3,15,0.5)
-rice=food_item("Rice", 60, 0.3, 15, 0.5)
+rice=food_item("Rice", 200, 4, 45, 0.5)
 food_list=[apple,rice]
+print("\nExample consumption calculation:")
 consumption(food_list)
+
+# User input for arbitrary foods
+print("\nEnter food items consumed today. Enter 'done' to finish.")
+user_food_list = []
+while True:
+    name = input("Food name (or 'done'): ")
+    if name.lower() == "done":
+        break
+    try:
+        calories = float(input("Calories: "))
+        protein = float(input("Protein (g): "))
+        carb = float(input("Carbohydrate (g): "))
+        fat = float(input("Fat (g): "))
+        user_food_list.append(food_item(name, calories, protein, carb, fat))
+    except:
+        print("Invalid input, please try again.")
+
+if user_food_list:
+    consumption(user_food_list)
+else:
+    print("No food items entered.")
