@@ -26,8 +26,8 @@ print(dalys_data.describe())
 # Most recent year = 2019
 
 #extract specific data using iloc and loc
-print(dalys_data.iloc[0:10,2:4])#show the third and fourth columns for the first 10 raws
-first10=dalys_data.iloc[0:10,2:4]
+print(dalys_data.iloc[0:11,2:4])#show the third and fourth columns for the first 10 raws
+first10=dalys_data.iloc[0:11,2:4]
 max_row=first10.loc[first10.DALYs.idxmax()]
 print("The maximum DALYs across the first 10 years in Afghanistan was recorded in 1998")
 # The maximum DALYs across the first 10 years in Afghanistan was recorded in 1998.
