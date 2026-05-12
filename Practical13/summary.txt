@@ -1,0 +1,24 @@
+1.Human DLX5 protein:
+Protein length: 289 amino acids
+Subcellular localisaton: Nuclear 
+
+2.Percentage identity range: 52.3%-100%
+Mouse DLX5 percentage identity: 96.5%
+Blue residues represent identical amino acids.
+Grey residues represent similar amino acids.
+
+3.python alignment results:
+Human vs Mouse 
+Alignment score:1490
+percentage identity:96.54%
+
+Human vs Random
+Alignment score:-298
+percentage identity:4.50%
+
+Mouse vs Random
+Alignment score:-300
+percentage identity:4.50%
+
+4. Interpretation：
+Human and mouse DLX5 proteins are the most closely related because they produced the highest alignment score and percentage identity.
